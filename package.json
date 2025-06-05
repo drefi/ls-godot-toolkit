@@ -1,0 +1,57 @@
+{
+  "name": "ls-godot-toolkit",
+  "displayName": "LS Godot Toolkit",
+  "description": "Set of tools for Godot development in Visual Studio Code, including scene selection, UID renaming and localization keys generation.",
+  "version": "0.1.6",
+  "publisher": "dranef",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "godot.csharp.selectScene",
+        "title": "Select Godot Scene"
+      }
+    ],
+    "configuration": {
+      "properties": {
+        "godot.csharp.latestScene": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the latest selected Godot scene."
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^4.0.0",
+    "vscode": "^1.1.37",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-name/godot-csharp-uid-renamer.git"
+  },
+  "license": "MIT",
+  "files": [
+    "out",
+    "src",
+    "README.md",
+    "LICENSE.md",
+    "tsconfig.json",
+    "webpack.config.js",
+    "icon.png"
+  ],
+  "icon": "icon.png"
+}

@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# Build output
+out/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Env files
+.env
+.env.*
+
+# Coverage reports
+coverage/
+
+# Extension packages
+*.vsix
