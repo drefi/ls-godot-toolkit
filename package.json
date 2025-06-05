@@ -1,8 +1,8 @@
 {
   "name": "ls-godot-toolkit",
-  "displayName": "LS Godot Toolkit",
+  "displayName": "LSGodotToolkit",
   "description": "Set of tools for Godot development in Visual Studio Code, including scene selection, UID renaming and localization keys generation.",
-  "version": "0.1.6",
+  "version": "0.1.12",
   "publisher": "dranef",
   "engines": {
     "vscode": "^1.60.0"
@@ -18,7 +18,19 @@
     "commands": [
       {
         "command": "godot.csharp.selectScene",
-        "title": "Select Godot Scene"
+        "title": "LSGodotToolkit: Select Scene"
+      },
+      {
+        "command": "ls-locale.extractTokensCurrentFile",
+        "title": "LSGodotToolkit: Extract Tokens from Current File"
+      },
+      {
+        "command": "ls-locale.extractTokensAll",
+        "title": "LSGodotToolkit: Extract all tokens (except excluded)"
+      },
+      {
+        "command": "ls-locale.addUpdateLanguage",
+        "title": "LSGodotToolkit: Add/Update Language Files"
       }
     ],
     "configuration": {
@@ -41,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-name/godot-csharp-uid-renamer.git"
+    "url": "https://github.com/drefi/ls-godot-toolkit.git"
   },
   "license": "MIT",
   "files": [

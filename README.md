@@ -1,4 +1,4 @@
-# Godot C# UID Renamer
+# LSGodotToolkit
 
 This Visual Studio Code extension automatically renames the associated UID file when a file is renamed in a Godot project.
 
