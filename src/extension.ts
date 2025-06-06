@@ -277,7 +277,7 @@ function registerAddUpdateLanguageCommand(context: vscode.ExtensionContext) {
                 const updates: Record<string, string> = {};
                 for (const row of rows) {
                     if (row.token && row[langCol]) {
-                        updates[`{${row.token}}`] = row[langCol];
+                        updates[row.token] = row[langCol];
                     }
                 }
                 // 5. Update .tres file

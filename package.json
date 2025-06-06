@@ -2,7 +2,7 @@
   "name": "ls-godot-toolkit",
   "displayName": "LSGodotToolkit",
   "description": "Set of tools for Godot development in Visual Studio Code, including scene selection, UID renaming and localization keys generation.",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "publisher": "dranef",
   "engines": {
     "vscode": "^1.60.0"
